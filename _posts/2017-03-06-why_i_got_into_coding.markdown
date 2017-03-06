@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Why I got Into Coding"
-date:   2017-03-06 22:53:37 +0000
+date:   2017-03-06 17:53:38 -0500
 ---
+
 
 From fidgeting with HTML and copying open source to manipulate code, I've always found it fascinating and empowering to create and change the appearance of web. It took me time to rediscover and realize that getting into coding on a deeper level can be my next learning journey. 
 
