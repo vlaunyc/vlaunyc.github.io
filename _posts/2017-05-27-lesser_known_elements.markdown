@@ -5,9 +5,9 @@ date:   2017-05-27 16:24:42 -0400
 ---
 
 
-## Let's talk about the lesser-known elements and features that have been added to HTML5.
-
-## **The `details` Element**
+Let's talk about the lesser-known elements and features that have been added to HTML5.
+<br><br><br>
+**The `details` Element** <br><br>
 This element is a collapsible box that has a title, and more info or functions that are hidden away. Normally this kind of widget is created using a combination of HTML and JavaScript, but HTML5 removes the scripting required and simplifies it. <br><br>
 Here's how it looks in code:
 ```
@@ -41,9 +41,9 @@ In the above example, the contents of the `summary` element will appear to the u
 However, if  `details` lacks a defined  `summary`, the browser will define a default summary. In the case where you would want the hidden content to be visible by default, you can use a Boolean  `open` attribute on the  `details`.
 
 Another rule is that the `summary` element must be a child of `details` and it must be the first child used.
-<br><br>
+<br><br><br>
 
-## **The `picture` element**
+**The `picture` element**<br><br>
 The `picture` element is a recent addition to HTML5 which lends itself to responsive web design with responsive images. `picture` lets you define multiple image sources, allowing users on smaller devices like mobile browsers to download a low resolution version of the image, while offering a larger image for tablets and desktops. 
 
 The `srcset`, `sizes`, `picture` and  `source` attributes give developers more flexibility in specify image resources. Essentially instead of having one image that is scaled up or down based on the screen width, multiple images can be designed to more appropriately fill the browser viewpoint. 
@@ -87,7 +87,7 @@ By providing multiple image sources, while using the `<picture>` or `<img>` with
 
 <br><br>
 
-## **The `download` attribute**
+**The `download` attribute**<br><br>
 The `download` attribute allows you to set a separate file download name than the actual link endpoint itself. 
 
 Download the file while clicking on the link instead of navigating to the file. <br><br>
@@ -102,9 +102,7 @@ Example in code:
 
 Note this attribute is only used if the href attribute is set.
 The value of the attribute will be the name of the downloaded file. There are no restrictions on allowed values and the browser will automatically detect the correct file extension an add it the the file.
-
-
-<br><br>
+<br>
 <hr />
 **Source**<br><br>
 Chen, P. (September 11, 2014). Built-in Browser Support for Responsive Images. https://www.html5rocks.com/en/tutorials/responsive/picture-element/
