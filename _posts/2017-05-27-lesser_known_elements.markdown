@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  Lesser Known Elements
-date:   2017-05-27 20:24:42 +0000
+date:   2017-05-27 16:24:42 -0400
 ---
 
 
-### Let's talk about the lesser-known elements and features that have been added to HTML5.
+## Let's talk about the lesser-known elements and features that have been added to HTML5.
 
-#### **The `details` Element**
+## **The `details` Element**
 This element is a collapsible box that has a title, and more info or functions that are hidden away. Normally this kind of widget is created using a combination of HTML and JavaScript, but HTML5 removes the scripting required and simplifies it. <br><br>
 Here's how it looks in code:
 ```
@@ -43,7 +43,7 @@ However, if  `details` lacks a defined  `summary`, the browser will define a def
 Another rule is that the `summary` element must be a child of `details` and it must be the first child used.
 <br><br>
 
-#### **The `picture` element**
+## **The `picture` element**
 The `picture` element is a recent addition to HTML5 which lends itself to responsive web design with responsive images. `picture` lets you define multiple image sources, allowing users on smaller devices like mobile browsers to download a low resolution version of the image, while offering a larger image for tablets and desktops. 
 
 The `srcset`, `sizes`, `picture` and  `source` attributes give developers more flexibility in specify image resources. Essentially instead of having one image that is scaled up or down based on the screen width, multiple images can be designed to more appropriately fill the browser viewpoint. 
@@ -87,7 +87,7 @@ By providing multiple image sources, while using the `<picture>` or `<img>` with
 
 <br><br>
 
-#### **The `download` attribute**
+## **The `download` attribute**
 The `download` attribute allows you to set a separate file download name than the actual link endpoint itself. 
 
 Download the file while clicking on the link instead of navigating to the file. <br><br>
