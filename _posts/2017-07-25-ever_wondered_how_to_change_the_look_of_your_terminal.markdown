@@ -6,17 +6,17 @@ date:   2017-07-24 20:41:24 -0400
 
 (FOR MAC USERS) 
 If your black and white terminal bothers you as much as it bothered me, here’s a few steps on how to change that!
-
-**HOW TO EDIT .BASH_PROFILE**
-**Step 1:** 
+<br><br><br>
+**HOW TO EDIT .BASH_PROFILE**<br><br>
+**Step 1:** <br>
 Open your Terminal.app 
 
 
-**Step 2:**
+**Step 2:**<Br>
 Type `**nano .bash_profile**` (This command will open the .bash_profile document or create it if it doesn’t already exist) 
 
 
-**Step 3**
+**Step 3**<br>
 Now you can make a add code to change to your terminal.
 
 This is the layout and look I decided to go with: <br>
@@ -32,8 +32,8 @@ parse_git_branch() {
 export PS1="\[\033[44m\]\[\033[37m\][\@]\[\033[00m\]\[\033[31m\] \$(parse_git_branch) \[\033[32m\] \W\[\033[37m\]
 🐢 "
 ```
-
-**Breaking it down:**
+<br><br>
+**Breaking it down:**<Br>
 Let's first talk about color. The color tag is `\[\033[##m\]`
 
 `##` = where you enter the color value. 
@@ -59,10 +59,9 @@ Here are the color values for background colors:
 * Red background: 41
 * White background: 47
 * Yellow background: 43
+<br><br><br>
 
-
-
-**Here's a breakdown of the above PS1 and the properties I wanted:**
+**Here's a breakdown of the above PS1 and the properties I wanted:**<br>
 (PS1 stands for Promt String 1. When you open terminal, it will display the content defined in PS1 variable in your bash profile.)  
 
 `\[\033[44m\]\[\033[37m\][\@]`   <-- this customizes the blue background color and foreground text color to white,  `\@` is 12-hour time in AM/PM format. You can also use `\t` for 24-hour HH:MM:SS format; `\T` for 12-hour HH:MM:SS format; or `\A` for 24-hour HH:MM format.
@@ -72,12 +71,12 @@ Here are the color values for background colors:
 `\[\033[32m\] \W`  <-- this customizes the foreground text color to green *(I then adjust it to aqua in my Preferences>Profiles>Text settings and adjusting ANSI Colors)* and `\W` is the current working directory base name (current folder only; if you want it to show all folders use lowercase  `\w`)  
 
 `\[\033[37m\] 🐢 `  <-- this customizes the foreground text color to white and you can even use an emoji by going to Edit > Emoji & Symbols, and then selecting the Emoji you'd like to use (the turtle emjoi is my favorite.) 
-
-
-
-**Step 4 - Save:**
-Now save your changes by typing **ctrl + o**.  Hit **return** to save.  Then exit Nano by typing **ctrl + x**.
 <br><br>
+You can view other prompt variables here: [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bashref.html#Controlling-the-Prompt)
+<br><br><br><br>
+**Step 4:**<br>
+Now save your changes by typing **ctrl + o**.  Hit **return** to save.  Then exit Nano by typing **ctrl + x**.
+<br><br><br><br>
 **HOW TO PERSONALIZE PROFILE COLORS**
 In Terminal > Preferences > click the '+' to add a New settings.
 Click on each color-chip and adjust to preferred color. See image below for reference:
