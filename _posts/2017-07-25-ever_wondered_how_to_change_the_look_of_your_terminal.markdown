@@ -8,12 +8,12 @@ date:   2017-07-24 20:41:24 -0400
 If your black and white terminal bothers you as much as it bothered me, here’s a few steps on how to change that!
 <br><br><br>
 **HOW TO EDIT .BASH_PROFILE**<br><br>
-**Step 1:** <br>
+ **Step 1:** <br>
 Open your Terminal.app 
 
 
 **Step 2:**<Br>
-Type `**nano .bash_profile**` (This command will open the .bash_profile document or create it if it doesn’t already exist) 
+Type `nano .bash_profile` (This command will open the .bash_profile document or create it if it doesn’t already exist) 
 
 
 **Step 3**<br>
@@ -22,9 +22,7 @@ Now you can make a add code to change to your terminal.
 This is the layout and look I decided to go with: <br>
 ![](http://i.imgur.com/dMdazri.png)
 <br>
-
 To get the above, paste these lines of code to change your Terminal prompt. 
-
 ```
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -39,7 +37,6 @@ Let's first talk about color. The color tag is `\[\033[##m\]`
 `##` = where you enter the color value. 
 
 Here are the color values for foreground text:
-
 * Black: 30
 * Blue: 34
 * Cyan: 36
@@ -50,7 +47,6 @@ Here are the color values for foreground text:
 * Yellow: 33
 
 Here are the color values for background colors:
-
 * Black background: 40
 * Blue background: 44
 * Cyan background: 46
@@ -59,7 +55,7 @@ Here are the color values for background colors:
 * Red background: 41
 * White background: 47
 * Yellow background: 43
-<br><br><br>
+<br><br>
 
 **Here's a breakdown of the above PS1 and the properties I wanted:**<br>
 (PS1 stands for Promt String 1. When you open terminal, it will display the content defined in PS1 variable in your bash profile.)  
@@ -73,11 +69,11 @@ Here are the color values for background colors:
 `\[\033[37m\] 🐢 `  <-- this customizes the foreground text color to white and you can even use an emoji by going to Edit > Emoji & Symbols, and then selecting the Emoji you'd like to use (the turtle emjoi is my favorite.) 
 <br><br>
 You can view other prompt variables here: [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bashref.html#Controlling-the-Prompt)
-<br><br><br><br>
+<br><br><br>
 **Step 4:**<br>
 Now save your changes by typing **ctrl + o**.  Hit **return** to save.  Then exit Nano by typing **ctrl + x**.
 <br><br><br><br>
-**HOW TO PERSONALIZE PROFILE COLORS**
+**HOW TO PERSONALIZE PROFILE COLORS**<br><br>
 In Terminal > Preferences > click the '+' to add a New settings.
 Click on each color-chip and adjust to preferred color. See image below for reference:
 
@@ -87,13 +83,13 @@ You can also download a color scheme too. I based my colors on [Solarized - by E
 <br><br>
 <hr />
 **Resources:**<br><br>
-https://natelandau.com/my-mac-osx-bash_profile/
+[https://natelandau.com/my-mac-osx-bash_profile/](https://natelandau.com/my-mac-osx-bash_profile/)
 
-https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/
+[https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/](https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/)
 
-https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
+[https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt](https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt)
 
-http://misc.flogisoft.com/bash/tip_colors_and_formatting
+[http://misc.flogisoft.com/bash/tip_colors_and_formatting](http://misc.flogisoft.com/bash/tip_colors_and_formatting)
 
 
 
