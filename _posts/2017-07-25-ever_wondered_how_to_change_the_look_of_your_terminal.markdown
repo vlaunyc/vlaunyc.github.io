@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "EVER WONDERED HOW TO CHANGE THE LOOK OF YOUR TERMINAL?"
-date:   2017-07-24 20:41:24 -0400
+title:      "EVER WONDERED HOW TO CHANGE THE LOOK OF YOUR TERMINAL?"
+date:       2017-07-24 20:41:24 -0400
+permalink:  ever_wondered_how_to_change_the_look_of_your_terminal
 ---
 
 (FOR MAC USERS) 
