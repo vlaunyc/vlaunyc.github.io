@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails Portfolio Project: Making Skincare"
-date:       2018-02-08 10:27:16 +0000
+date:       2018-02-08 05:27:17 -0500
 permalink:  rails_portfolio_project_making_skincare
 ---
 
@@ -101,7 +101,7 @@ After my models were planed out and 'soild', it was much easier for me to move o
       user.username = auth.info.name 
     end
   end
-	```
+```
 
 <br>
 
