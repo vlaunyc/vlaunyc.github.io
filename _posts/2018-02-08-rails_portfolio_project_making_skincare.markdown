@@ -53,7 +53,7 @@ belongs_to :skinconcern
 
 
 I nested formulas inside the parent of user. So you can create a new formula on **/users/1/formulas/new**
-or on **formulas/new** and both would save with current users id. 
+or on **/formulas/new** and both would save with current users id. 
 
 ```
 # config/routes.rb
@@ -113,7 +113,7 @@ After my models were planed out and 'soild', it was much easier for me to move o
 
 **VISUAL DESIGN** <br>
 
-I used Bootswatch [Journal](https://bootswatch.com/journal/). Bootswatch is a collection of themed swatches that you can download for free and drop into your Bootstrap site. I decided to not download the CSS file and just used BootstrapCDN which is a free and public content delivery network. You can use BootstrapCDN and load CSS, JavaScript and images remotely, from their servers.
+I used Bootswatch [Journal](https://bootswatch.com/journal/). Bootswatch is a collection of themed swatches that you can download for free and drop into your Bootstrap site. I decided to not download the CSS file and just used BootstrapCDN which is a free public content delivery network. You can use BootstrapCDN and load CSS, JavaScript and images remotely, from their servers.
 
 <br>
 
