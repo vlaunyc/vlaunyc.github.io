@@ -33,7 +33,8 @@ Formula
 belongs_to :user
 belongs_to :category
 has_many :ingredients
-has_and_belongs_to_many :skinconcerns
+has_many :formula_skinconcerns
+has_many :skinconcerns, :through => :formula_skinconcerns
 has_attached_file :image #using paperclip gem here
 
 Ingredient
@@ -43,7 +44,8 @@ Category
 has_many :formulas
 
 Skinconcern
-has_and_belongs_to_many :formulas
+has_many :formula_skinconcerns
+has_many :formulas, :through => :formula_skinconcerns
 
 FormulaSkinconcern
 belongs_to :formula
