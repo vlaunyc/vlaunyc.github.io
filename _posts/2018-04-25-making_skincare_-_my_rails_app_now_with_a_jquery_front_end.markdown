@@ -1,32 +1,32 @@
 ---
 layout: post
 title:      "Making Skincare - My Rails App now with a jQuery Front End!"
-date:       2018-04-25 06:12:56 +0000
+date:       2018-04-25 02:12:57 -0400
 permalink:  making_skincare_-_my_rails_app_now_with_a_jquery_front_end
 ---
 
 This project expands upon the rails assessment that I did previously (you can read more [here](http://vicky-lau.com/rails_portfolio_project_making_skincare)). The goal was to add dynamic features through jQuery and a JSON API. Some of the requirements involved rendering an index and show page using jQuery and JSON, creating a resource and rendering the response without a page refresh, a has-many relationship in the JSON, etc..
 <br><br>
 
-## **DEMO OF MY RAILS APP WITH JQUERY FRONT END** 
+ **DEMO OF MY RAILS APP WITH JQUERY FRONT END** 
 <iframe width="600" height="338"  src="https://www.youtube.com/embed/sVbDJ5y8Q-M?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+<br><br>
+ **PROJECT REQUIREMENTS AND HOW I IMPLEMENTED THEM** <br>
 
-## **PROJECT REQUIREMENTS AND HOW I IMPLEMENTED THEM** 
+**[x] Use jQuery for implementing new requirements**
 
-##### [x] Use jQuery for implementing new requirements
-
-##### [x] Include a show resource rendered using jQuery and an Active Model Serialization JSON backend.
+**[x] Include a show resource rendered using jQuery and an Active Model Serialization JSON backend.**
 - /skinconcerns/1 have "next" and "previous" buttons that navigate to the following skin concern show page by alphebetical order of skin concern name.
 
 - /categories/1 have "next" and "previous" buttons that navigate to the following category show page by numerical order of category name
 
 - /users/1 have a "view formulas" button that appends all of the users formulas to the page with out a page refresh.
 
-##### [x] Include an index resource rendered using jQuery and an Active Model Serialization JSON backend.
+**[x] Include an index resource rendered using jQuery and an Active Model Serialization JSON backend.**
 - /formulas index page has 'see description' link under each formula. On click it appends the formulas description.
 
-##### [x] Include at least one has_many relationship in information rendered via JSON and appended to the DOM.
+**[x] Include at least one has_many relationship in information rendered via JSON and appended to the DOM.**
 - Category `has_many` Formulas - renders next and previous category on button click
 
 - Formula `has_many` Comments - renders new comment in div after submitting a form
@@ -37,19 +37,20 @@ This project expands upon the rails assessment that I did previously (you can re
 
 - Formula `has_many` Ingredients - renders new form field for ingredient on click of 'Add Ingredient' button
 
-###### [x] Use your Rails API and a form to create a resource and render the response without a page refresh.
+**[x] Use your Rails API and a form to create a resource and render the response without a page refresh.**
 - When a user adds a comment to a formula, the comment is serialized and submitted via a (AJAX) POST request with the response being the new object in JSON and then appending the new comment to the DOM without a page refresh.
 
-##### [x] Translate JSON responses into JS model objects.
+**[x] Translate JSON responses into JS model objects.**
 - Upon submission of a comment; the id, user, and content of new comment was used to create a JS comment object.
 
 - Formula's date on users show page is taken from JSON response and turned into a JS date object  and appended to the page.
 
-##### [x] At least one of the JS model objects must have at least one method added by your code to the prototype.
+**[x] At least one of the JS model objects must have at least one method added by your code to the prototype.**
 - `Comment.prototype.renderComments `-- The data of a comment is passed into the `renderComments()` function and appended to the DOM.
 
+<br><br>
+**DYNAMIC INGREDIENT INPUT ON FORMULAS FORM** <br>
 
-## **DYNAMIC INGREDIENT INPUT ON FORMULAS FORM** 
 Previously I created dynamic form fields with just rails. But it would refresh the page on every 'add ingredient'. This time with javascript I was able to append the field without a page refresh. Creating dynamic forms with Javascript was a bit tricky. But here is how I implemented it.
 ```
 //formula.js
@@ -92,8 +93,9 @@ $(document).ready(function(){
 	});
 });
 ```
-
-## **CREATING A COMMENT OBJECT IN JAVASCRIPT**
+<br><br>
+ **CREATING A COMMENT OBJECT IN JAVASCRIPT**<br>
+ 
 When a user adds a comment to a formula, the comment is serialized and submitted via an .ajax POST request.
 ```
 $(function(){
@@ -185,8 +187,9 @@ $(".commentBox").val("");
 ```
 Where we empty the comment box, so the user can add another comment. And that concludes the function for new comment.
 
-
-## **CREATING A DATE OBJECT IN JAVASCRIPT**
+<br><br>
+ **CREATING A DATE OBJECT IN JAVASCRIPT**<br>
+ 
 This is a little easier to follow since it's all in one function.
 ```
 // users.js
@@ -238,12 +241,15 @@ function loadUserFormula(data) {
   }); //end of $.each
 }
 ```
-
-## **CONCLUSION**
+<br><br>
+ **CONCLUSION**<br>
+ 
 Overall I'm happy with the way my app turned out and learned a lot in the process. There are a few features I would like to add such as a user's ability to delete a comment that is theirs. Also channging the ingredients model to be a many to many relationship with formulas, creating a 3 column formula_ingredients tabel to save the id's and amt_of_ingredient. That way a user can look up formulas by an ingredient. But I will have to work on that at a later date. I'm excited to move forward onto React!
 
 <hr>
-## **RESOURCES**
+<br><br>
+**RESOURCES**<br>
+
 Here are some resources that were helpful during my process
 
 - Date.prototype.toLocaleDateString(): <br>
