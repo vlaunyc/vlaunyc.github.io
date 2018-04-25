@@ -19,9 +19,9 @@ This project expands upon the rails assessment that I did previously (you can re
 **[x] Include a show resource rendered using jQuery and an Active Model Serialization JSON backend.**
 - /skinconcerns/1 have "next" and "previous" buttons that navigate to the following skin concern show page by alphebetical order of skin concern name.
 
-- /categories/1 have "next" and "previous" buttons that navigate to the following category show page by numerical order of category name
+- /categories/1 have "next" and "previous" buttons that navigate to the following category show page by numerical order of category id
 
-- /users/1 have a "view formulas" button that appends all of the users formulas to the page with out a page refresh.
+- /users/1 have a "view formulas" button that appends all of the users formulas to the page without a page refresh.
 
 **[x] Include an index resource rendered using jQuery and an Active Model Serialization JSON backend.**
 - /formulas index page has 'see description' link under each formula. On click it appends the formulas description.
@@ -66,7 +66,7 @@ $(document).ready(function(){
 		//create date object
 		var date = new Date();
 		
-		//get number of milliseconds since midnight Jan 1, 1970  and use it for address key 
+		//get number of milliseconds since midnight Jan 1, 1970  and use it for ingredients key 
 		var mSec = date.getTime();
 		
 		//Replace 0 with milliseconds 
@@ -244,7 +244,7 @@ function loadUserFormula(data) {
 <br><br>
  **CONCLUSION**<br>
  
-Overall I'm happy with the way my app turned out and learned a lot in the process. There are a few features I would like to add such as a user's ability to delete a comment that is theirs. Also channging the ingredients model to be a many to many relationship with formulas, creating a 3 column formula_ingredients tabel to save the id's and amt_of_ingredient. That way a user can look up formulas by an ingredient. But I will have to work on that at a later date. I'm excited to move forward onto React!
+Overall I'm happy with the way my app turned out and learned a lot in the process. There are a few features I would like to add such as a user's ability to delete a comment that is theirs. Also changing the ingredients model to be a many to many relationship with formulas, creating a 3 column formula_ingredients table to save the id's and amt_of_ingredient. That way a user can look up formulas by an ingredient. But I will have to work on that at a later date. I'm excited to move forward onto React!
 
 <hr>
 <br><br>
@@ -252,29 +252,21 @@ Overall I'm happy with the way my app turned out and learned a lot in the proces
 
 Here are some resources that were helpful during my process
 
-- Date.prototype.toLocaleDateString(): <br>
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
+- [Date.prototype.toLocaleDateString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString) <br>
 
-- Adding paperclip image to JSON: <br>
-https://stackoverflow.com/questions/5588185/how-can-i-get-url-for-paperclip-image-in-to-json
+- [Adding paperclip image to JSON](https://stackoverflow.com/questions/5588185/how-can-i-get-url-for-paperclip-image-in-to-json) <br>
 
-- The Detailed Guide on How Ajax Works With Ruby on Rails: <br>
-https://launchschool.com/blog/the-detailed-guide-on-how-ajax-works-with-ruby-on-rails
+- [The Detailed Guide on How Ajax Works With Ruby on Rails ](https://launchschool.com/blog/the-detailed-guide-on-how-ajax-works-with-ruby-on-rails)<br>
 
-- :first-child Selector <br>
-https://api.jquery.com/first-child-selector/
+- [:first-child Selector](https://api.jquery.com/first-child-selector/) <br>
 
-- Appending input feilds: <br>
-http://jsfiddle.net/8L8Zx/#run
+- [Appending input feilds](http://jsfiddle.net/8L8Zx/#run) <br>
 
-- Adding unique ids to input feilds that were appended: <br>
-http://jyrkis-blogs.blogspot.com/2014/06/adding-fields-on-fly-with-ruby-on-rails.html
+- [Adding unique ids to input feilds that were appended](http://jyrkis-blogs.blogspot.com/2014/06/adding-fields-on-fly-with-ruby-on-rails.html) <br>
 
-- Sort Javascript Object Array By Date: <br>
-https://stackoverflow.com/questions/10123953/sort-javascript-object-array-by-date
+- [Sort Javascript Object Array By Date](https://stackoverflow.com/questions/10123953/sort-javascript-object-array-by-date) <br>
 
-- Bootswatch style: Journal <br>
-https://bootswatch.com/journal/
+- [ Bootswatch style: Journal ]( https://bootswatch.com/journal/)<br>
 
 
 
