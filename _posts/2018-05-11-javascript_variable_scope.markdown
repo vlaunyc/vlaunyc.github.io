@@ -1,16 +1,14 @@
 ---
 layout: post
 title:      "Javascript Variable Scope"
-date:       2018-05-11 18:07:04 +0000
+date:       2018-05-11 14:07:04 -0400
 permalink:  javascript_variable_scope
 ---
 
-
 Scope is the concept of where something is available. In Javascript it has to do with where declared variables and methods are available within our code. Essentially, if a variable or function is not declared inside a function or block it's in the global scope, and is therefore accessible from anywhere in your code. 
-
 <br>
-
-**FUNCTION SCOPE**
+<br>
+## FUNCTION SCOPE
 
 When a new function is declared, our code inside the function body is no longer in the global scope. Variables declared using `var` keyword are function scoped. Which means it will exist with in the scope of the function it is declared inside of.
 
@@ -25,10 +23,8 @@ function evilCharacter() {
 console.log(name); //=> Mario
 evilCharacter(); // => Bowser
 console.log(name); //=> Mario
-
 ```
-
-The above code declares `name` both inside and outside of function `evilCharacter()`. The variable declared with `var` inside the function `evilCharacter()` is not reachable from outside the function. Here you can only access Bowser though function `evilCharacter()`
+The above code declares `name` both inside and outside of function `evilCharacter()`. The variable declared with `var` inside the function `evilCharacter()` is not reachable from outside the function. Here you can only access Bowser though function `evilCharacter()`.
 
 So what happens when we don't declare `var` in the function?
 
@@ -45,15 +41,12 @@ evilCharacter(); // => Bowser
 console.log(name);// => Bowser
 
 // oh no! Bowser took over Mario!
-
 ```
 `name` outside the function (global scope) was overwritten by `name` inside function `evilCharacter()` because we didn't specify that `name` was to be scoped only to `evilCharacter()` .
-
 <br>
-
-**BLOCK SCOPE**
-
-**VAR**
+<br>
+## BLOCK SCOPE
+### VAR
 
 Variables declared with `var`  **do not** have block scope. 
 ```
@@ -66,17 +59,16 @@ if (true){
 name; // => 'Peach'
 ```
 `name`'s value was over written within the **if block.** This logs `Peach` because the `var name` statement within the block is in the same scope as the `var name` statement before the block.
-
 <br>
-**`let` and `const` -- THE INTRODUCTION OF BLOCK SCOPE**
+<br>
+## `let` and `const` -- THE INTRODUCTION OF BLOCK SCOPE
 
 In ES6, `let` and `const` were introduced as alternative ways of declaring variables — both being blocked scoped.
 
 In **block scope**, any block will be scoped, such as if-statements. 
-
 <br>
-
-**LET**
+<br>
+### LET
 
 ```
 let name = "Daisy"; 
@@ -88,10 +80,9 @@ if (true){
 name; // => 'Daisy'
 ```
 Even though `name` was assigned to `"Peach"` in the **if block**, that assignment was local to the block and therefore our global `name` was still `"Daisy"`. The **if block's** scope was separate from the global scope.
-
 <br>
-
-**CONST**
+<br>
+### CONST
 
 The same is true with `const`"
 ```
