@@ -84,7 +84,7 @@ Even though `name` was assigned to `"Peach"` in the **if block**, that assignmen
 <br>
 ### CONST
 
-The same is true with `const`"
+The same is true with `const`
 ```
 const name = "Daisy"; 
 
