@@ -8,7 +8,7 @@ permalink:  javascript_variable_scope
 Scope is the concept of where something is available. In Javascript it has to do with where declared variables and methods are available within our code. Essentially, if a variable or function is not declared inside a function or block it's in the global scope, and is therefore accessible from anywhere in your code. 
 <br>
 <br>
-## FUNCTION SCOPE
+**FUNCTION SCOPE**
 
 When a new function is declared, our code inside the function body is no longer in the global scope. Variables declared using `var` keyword are function scoped. Which means it will exist with in the scope of the function it is declared inside of.
 
@@ -45,8 +45,9 @@ console.log(name);// => Bowser
 `name` outside the function (global scope) was overwritten by `name` inside function `evilCharacter()` because we didn't specify that `name` was to be scoped only to `evilCharacter()` .
 <br>
 <br>
-## BLOCK SCOPE
-### VAR
+**BLOCK SCOPE**
+
+**VAR**
 
 Variables declared with `var`  **do not** have block scope. 
 ```
@@ -61,14 +62,14 @@ name; // => 'Peach'
 `name`'s value was over written within the **if block.** This logs `Peach` because the `var name` statement within the block is in the same scope as the `var name` statement before the block.
 <br>
 <br>
-## `let` and `const` -- THE INTRODUCTION OF BLOCK SCOPE
+** `let` and `const` -- THE INTRODUCTION OF BLOCK SCOPE**
 
 In ES6, `let` and `const` were introduced as alternative ways of declaring variables — both being blocked scoped.
 
 In **block scope**, any block will be scoped, such as if-statements. 
 <br>
 <br>
-### LET
+**LET**
 
 ```
 let name = "Daisy"; 
@@ -82,7 +83,7 @@ name; // => 'Daisy'
 Even though `name` was assigned to `"Peach"` in the **if block**, that assignment was local to the block and therefore our global `name` was still `"Daisy"`. The **if block's** scope was separate from the global scope.
 <br>
 <br>
-### CONST
+**CONST**
 
 The same is true with `const`
 ```
