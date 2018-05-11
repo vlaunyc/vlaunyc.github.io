@@ -59,7 +59,7 @@ if (true){
   var name = "Peach";
 } 
 
-name; // => 'Peach'
+console.log(name);// => Peach
 ```
 `name`'s value was over written within the **if block.** This logs `Peach` because the `var name` statement within the block is in the same scope as the `var name` statement before the block.
 
@@ -82,7 +82,7 @@ if (true){
   let name = "Peach";
 } 
 
-name; // => 'Daisy'
+console.log(name);// => Daisy
 ```
 Even though `name` was assigned to `"Peach"` in the **if block**, that assignment was local to the block and therefore our global `name` was still `"Daisy"`. The **if block's** scope was separate from the global scope.
 
@@ -98,7 +98,7 @@ if (true){
   const name = "Peach";
 } 
 
-name; // => 'Daisy'
+console.log(name);// => Daisy
 ```
 *Note that the block-scoped `const name = "Peach";` does not give a SyntaxError because it can be declared uniquely within the block.*
 
