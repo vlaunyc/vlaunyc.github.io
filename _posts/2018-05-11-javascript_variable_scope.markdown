@@ -67,7 +67,7 @@ console.log(name);// => Peach
 
 **`let` and `const` -- THE INTRODUCTION OF BLOCK SCOPE**
 
-In ES6, `let` and `const` were introduced as alternative ways of declaring variables — both being blocked scoped.
+In ES2015 (previously referred to as ES6), `let` and `const` were introduced as alternative ways of declaring variables — both being blocked scoped.
 
 In **block scope**, any block will be scoped, such as if-statements. 
 
