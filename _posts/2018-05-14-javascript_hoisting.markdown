@@ -151,7 +151,7 @@ var greet = function hey(character) {
   console.log("Hey " + character);
 };
 ```
-As you see in the above code, the function `hey` was not captured as part of the compilation phase. The function greet is still not hoisted even if we name our function. Only `greet`’s variable was hoisted and in memory as undefined during compilation phase. 
+As you see in the above code, the function `hey` was not captured as part of the compilation phase. The function `greet` is still not hoisted even if we name our function. Only `greet`’s variable was hoisted and in memory as undefined during compilation phase. 
 
 A named function expression can be handy when errors are thrown. The console will tell you what functions caused errors instead of stating anonymous aka stack trace.
 
@@ -165,7 +165,7 @@ var hello = function(character) {
   console.log("Hello " + character);
 };
 ```
-Anonymous functions are functions without a name. There are a couple of ways to create functions however they are all created at application run time. Which means `hello` function is only created when we hit this line in the program.
+Anonymous functions are functions without a name. There are a couple of ways to create anonymous functions however they are all created at application run time. Which means `hello` function is only created when we hit this line in the program.
 
 One of the more famous use cases for anonymous functions are Immediately Invokable Function Expressions (IIFE). 
 
