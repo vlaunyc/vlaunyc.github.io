@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      " JavaScript Hoisting"
-date:       2018-05-15 00:50:51 +0000
+date:       2018-05-14 20:50:52 -0400
 permalink:  javascript_hoisting
 ---
 
@@ -171,24 +171,32 @@ One of the more famous use cases for anonymous functions are Immediately Invokab
 
 <br>
 **IIFE (Immediately Invokable Function Expression)**
-
-Function expressions can be **named** or **anonymous**, but they cannot start with the function keyword like this:
-
 ```
 // IIFE (Immediately Invokable Function Expression)
 (function() {
-  var peach = "Hello Princess Peach"
-  console.log(peach); // Hello Princess Peach
+  var peach = "Hello Princess Peach";
+  return peach;  //=> 'Hello Princess Peach'
 })();
 
-//Variable name is not accessible from outside scope
-console.log(peach) // ReferenceError: peach is not defined
+// Variable name is not accessible from outside scope
+console.log(peach); // ReferenceError: peach is not defined
 ```
 An immediately-invoked function expression (or IIFE, pronounced "iffy"), is a function that runs as soon as it's defined. 
 
 By placing the anonymous function in parentheses (a group context), the entire group is evaluated and the value returned. The returned value is actually the entire anonymous function itself, so all we have to do is add two parentheses after it to invoke it. 
 
 The primary reason to use an IIFE is to is to obtain data privacy and avoid declaring variables in the global scope. Since JavaScript's `var` scopes variables to their containing function, any variables declared within the IIFE cannot be accessed by the outside world.
+
+Assigning the IIFE to a variable does not store it but its result.
+```
+let greet = (function() {
+  var peach = "Hello Princess Peach";
+	return peach;
+})();
+
+// Immediately creates the output
+greet;  //=> 'Hello Princess Peach'
+```
 
 <br>
 
