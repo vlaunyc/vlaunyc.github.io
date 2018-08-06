@@ -66,7 +66,6 @@ I'm importing the *smart components* for my Router, which are my *container comp
 7. The *container components* pass props down to my *presentational components (aka dumb components)*. My *presentational components* are only in charge of displaying props and [styled-components](https://www.styled-components.com/). 
 
 Here's a great tutorial for configuring Redux store, action creators and defining reducers: [react-redux-tutorial](https://www.thegreatcodeadventure.com/react-redux-tutorial-part-iii-async-redux/).
-
 <br>
 
 and now I have a confession to make... 
@@ -77,7 +76,7 @@ and now I have a confession to make...
 For implementing styled-component, check out the [docs on getting-started]( https://www.styled-components.com/docs/basics#getting-started
 ).
 
-</br>
+<br>
 
 **WHAT'S GREAT ABOUT STYLED COMPONENTS?**
 
@@ -149,7 +148,7 @@ export const XButton = styled(HeartButton)`
   color: #424242;
 `
 ```
-<img width="300" src="https://i.imgur.com/eSxLXqd.png"></img>
+<img width="300" src="https://i.imgur.com/eSxLXqd.png">
 
 In styles.js my **HeartButton** is a **styled(Button)** and my **XButton** is an extension of the HeartButton!  
 
@@ -166,15 +165,15 @@ const Table = ({ stories, onDismiss, onSave }) =>
   <div className="table">
     {stories.map(item =>
       <Wrapper key={item.objectID}>
-        ...
+      ...
         <HeartButton onClick={() => onSave(item)}>
           <i className="fas fa-heart"></i>
         </HeartButton>
-  			...
+  	...
         <XButton onClick={() => onDismiss(item.objectID)}>
           &#10006;
         </XButton>
-  			...
+  	...
       </Wrapper>
     )}
   </div>
@@ -183,8 +182,6 @@ export default Table;
 ```
 
 **SUPER COOL!  right?** 
-
-<br><br>
 
 Over all I learned a lot from this project. It was my first React-Redux app and really helped me understand Async flow and the manner in which the app retrieves data and makes it available to the components. I really enjoyed learning how to implement styled-components too. 
 
