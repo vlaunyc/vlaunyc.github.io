@@ -1,15 +1,16 @@
 ---
 layout: post
 title:      "React + Hacker News = Rehack-News"
-date:       2018-08-06 22:09:19 +0000
+date:       2018-08-06 18:09:19 -0400
 permalink:  react_hacker_news_rehack-news
 ---
 
 
 For my final project I decided to make a hacker news client for viewing top stories, searching stories, and the ability to save stories to read later. I wanted the user interface to be clean, minimal, and easy to read. I basically wanted a prettier [hacker news](https://news.ycombinator.com/) with save and search functionality.  
-<img width="700" src="https://i.imgur.com/SVtQngg.png"></img>
-<img width="700" src="https://i.imgur.com/PTa6u8t.png"></img>
-<img width="700" src="https://i.imgur.com/LocIIHj.png"></img>
+
+<img width="700" src="https://i.imgur.com/SVtQngg.png">
+<img width="700" src="https://i.imgur.com/PTa6u8t.png">
+<img width="700" src="https://i.imgur.com/LocIIHj.png">
 
 **There were a few things I wanted to add in addition to requirements for the project.**
 1. Connect to a live API
