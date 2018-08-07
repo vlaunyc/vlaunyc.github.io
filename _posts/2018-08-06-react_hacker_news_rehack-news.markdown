@@ -85,7 +85,7 @@ For implementing styled-component, check out the [docs on getting-started]( http
 * **Reusability**
 * **Extended styles**
 
-Here's an example of ***buttons*** that demonstrate the the easy use of CSS syntax, passing props, reusability, and extending of styles.
+Here's an example of ***buttons*** that demonstrate the use of CSS syntax, passing props, reusability, and the extension of styles.
 
 I have a button component
 ```
@@ -152,7 +152,7 @@ export const XButton = styled(HeartButton)`
 
 In styles.js my **HeartButton** is a **styled(Button)** and my **XButton** is an extension of the HeartButton!  
 
-These styled buttons are imported and used in all of my container components.
+These styled buttons are imported and used in all of my presentational components.
 
 ```
 import React from 'react';
