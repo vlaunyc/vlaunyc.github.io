@@ -1,15 +1,14 @@
 # Site settings
-title: Learning to code one line at a time... 
+author: Vicky Lau
+title: Just one line at a time
 header-img: img/home-bg.png
 email: vlau.nyc@gmail.com
-copyright_name: vlaunyc
+copyright_name: Vicky Lau
 description: > # this means to ignore newlines until "baseurl:"
   learning, exploring, and never stopping... 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  vlaunyc
-learn_profile: vlaunyc
-email_username: vlau.nyc@gmail.com
 
 # Build settings
 markdown: kramdown
